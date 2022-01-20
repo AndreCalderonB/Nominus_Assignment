@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+.nominisLogo {
+  display: none !important;
+}
+.backGround {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/desktop-background.png");
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.d-col {
+  flex-direction: column !important;
+}
+.justify-content-sb {
+  justify-content: space-between;
+}
+.pr-0 {
+  padding-right: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+.mr-2 {
+  margin-right: 1rem;
+}
+.storyBody {
+  display: flex;
+  flex-direction: column;
+}
+.padding {
+  padding: 3rem;
+}
+.storyInfo {
+  color: #cb0101;
+  text-align: left;
+}
+.storyInfo > h4 {
+  font-size: 2rem !important;
+  margin-bottom: 0.25rem !important;
+  font-weight: 700;
+}
+.storyInfo > h5 {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  margin-top: 0.25rem !important;
+}
+.img-65 {
+  max-width: 65%;
+  height: auto;
+}
+.img-85 {
+  max-width: 85%;
+  height: auto;
+}
+.img-100 {
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 10px;
+}
+
+.excerciseText {
+  text-align: left;
+}
+.excerciseText > h4 {
+  color: #5b6866;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.excerciseText > p {
+  color: #748381;
+  font-size: 2.2rem;
+  font-weight: 400;
+  width: 70%;
+}
+
+.solutionContainer {
+  width: 80%;
+  align-self: end;
+}
+.excercise {
+  height: 45vh;
+}
+.excerciseSolution {
+  color: #5b6866;
+  font-weight: 600;
+  font-size: 2.2rem;
+  text-align: start;
+  background-color: #f2f3f4;
+  border-radius: 10px;
+  justify-content: start !important;
+}
+.excerciseSolution > p {
+  margin-bottom: 0;
+}
+.wordBox {
+  width: fit-content;
+  background-color: #f2f3f4;
+  border-radius: 10px;
+  transition: 100ms ease-in-out;
+}
+.wordBox > h4 {
+  color: #5b6866;
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+.wordBox:hover {
+  transform: scale(1.1);
+}
+.wordBox.selected:hover {
+  transform: scale(1);
+}
+.selected > h4 {
+  color: #9bafac;
+}
+.selectable {
+  cursor: pointer;
+}
+.excerciseInput {
+  flex-wrap: wrap;
+  white-space: pre;
+  justify-content: start !important;
+}
+.excercise-left {
+  height: 50vh;
+}
+.mute-btn {
+  max-width: 30px;
+  transition: 200ms ease-in-out;
+  cursor:pointer
+}
+.heart {
+  width: 80%;
+  max-width: 25px;
+  margin: 2px;
+}
+.hearts {
+  justify-content: end !important;
+}
+.redo {
+  transform: rotate(0deg);
+  transition: 500ms ease-in-out;
+}
+.redo:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+.redo:focus {
+  transform: rotate(360deg) scale(1);
+}
+.mute-btn:hover {
+  transform: scale(1.1);
+}
+.correct {
+  color:rgb(2, 155, 2)
+}
+.wrong {
+  color:#f10a0a
+}
+
+@media (max-width: 375px) {
+  .nominisLogo {
+    display: flex !important;
+  }
+  .storyInfoContainer {
+    display: none !important;
+  }
+  .profilePicContainer {
+    display: none !important;
+  }
+  .excerciseText > p {
+    color: #748381;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .backGround {
+    background-image: url("../img/mobile-background.png");
+  }
+  .padding {
+    padding: 1.5rem;
+  }
+  .solutionContainer {
+    width: 100% !important;
+    align-self: center !important;
+  }
+  .excerciseSolution {
+    font-size: 1.2rem !important;
+  }
+  .excerciseInput {
+    justify-content: center !important;
+  }
+  .excerciseText > h4 {
+    font-size: 2rem;
+  }
+  .wordBox > h4 {
+    color: #5b6866;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .excercise {
+    height: 90vh;
+  }
+  .excercise-left {
+    height: 30vh !important;
+  }
+}
