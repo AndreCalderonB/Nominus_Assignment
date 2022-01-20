@@ -8,6 +8,7 @@ Run **npm install** before running, because the **node_modules** folder isn´t i
 # Features: 
 - You can set other excercises on the **<Story />** component, **line 55**, by changing the "solution" prop.
 - Solutions are automatically separated and scrambled.
+- Answers are colored green if correct, and red if incorrect.
 
 # Libraries Used:
 - Bootstrap CSS.
